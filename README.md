@@ -13,12 +13,12 @@
 - **Longitudinal Monitoring**: In LONESTAR, baseline and 3-month CTs show dynamic SCENT-predicted PD-L1 shifts aligning with clinical response (odds ratio=0.14; Fisher’s exact p=0.054).
 
 ## Installation
-To install the **development version** of I-SABR-SELECT using `pip`, run the following command:
+To install the **development version** of SCENT using `pip`, run the following command:
 
 ```bash
 pip install git+https://github.com/WuLabMDA/SCENT.git
 ```
-Alternatively, I-SABR-SELECT can be cloned using the following command:
+Alternatively, SCENT can be cloned using the following command:
 
 ```bash
 git clone https://github.com/WuLabMDA/SCENT.git
