@@ -106,9 +106,9 @@ Run:
 
 ```bash
 python create_data_summary.py \
-    --data-root /Data/GEMINI_DATA_EMAN_Collected/RawData/AllCohort \
-    --metadata-file /Data/GEMINI_DATA_EMAN_Collected/Theranostic_surrogate_marker_.xlsx \
-    --output-file /Data/GEMINI_DATA_EMAN_Collected/DeepLearningBased/AllCohort/DataSummary_Label_v2.xlsx
+    --data-root /Data/RawData/AllCohort \
+    --metadata-file /Data/Theranostic_surrogate_marker_.xlsx \
+    --output-file /Data/DeepLearningBased/AllCohort/DataSummary_Label_v2.xlsx
 ```
 
 ### 3. Extract Radiomics Features
@@ -136,9 +136,9 @@ Run:
 
 ```bash
 python extract_radiomics_features.py \
-    --data-root /Data/GEMINI_DATA_EMAN_Collected/RawData/AllCohort \
-    --params-file /Data/GEMINI_DATA_EMAN_Collected/Settings/radiomics_params.yaml \
-    --output-dir /Data/GEMINI_DATA_EMAN_Collected/RadiomicsFeatures/AllCohort
+    --data-root /Data/RawData/AllCohort \
+    --params-file /Data/Settings/radiomics_params.yaml \
+    --output-dir /Data/RadiomicsFeatures/AllCohort
 ```
 
 The output will be saved as one CSV file per mask radius.
@@ -151,8 +151,8 @@ Run:
 
 ```bash
 python slice_tumor_patches.py \
-    --data-root /Data/GEMINI_DATA_EMAN_Collected/RawData/AllCohort \
-    --output-root /Data/GEMINI_DATA_EMAN_Collected/DeepLearningBased/AllCohort \
+    --data-root /Data/RawData/AllCohort \
+    --output-root /Data/DeepLearningBased/AllCohort \
     --modes 2d 3d \
     --depths 3 32 64 128 \
     --wh-size 224 \
@@ -185,9 +185,9 @@ Use this for 2D crops or 3-slice crops. The input is converted to 3 channels.
 
 ```bash
 python train_vit_pdl1.py \
-    --data-dir /Data/GEMINI_DATA_EMAN_Collected/DeepLearningBased/AllCohort/2D/tissue_pad_32 \
-    --metadata-file /Data/GEMINI_DATA_EMAN_Collected/Theranostic_surrogate_marker_.xlsx \
-    --output-root /Data/GEMINI_DATA_EMAN_Collected/outputs \
+    --data-dir /Data/DeepLearningBased/AllCohort/2D/tissue_pad_32 \
+    --metadata-file /Data/Theranostic_surrogate_marker_.xlsx \
+    --output-root /Data/outputs \
     --vit-mode 2d_rgb \
     --target-mode twoclass \
     --train-batch-size 16 \
@@ -204,9 +204,9 @@ Example for 32-slice input:
 
 ```bash
 python train_vit_pdl1.py \
-    --data-dir /Data/GEMINI_DATA_EMAN_Collected/DeepLearningBased/AllCohort/3D_32_224_224/tissue_pad_32 \
-    --metadata-file /Data/GEMINI_DATA_EMAN_Collected/Theranostic_surrogate_marker_.xlsx \
-    --output-root /Data/GEMINI_DATA_EMAN_Collected/outputs \
+    --data-dir /Data/DeepLearningBased/AllCohort/3D_32_224_224/tissue_pad_32 \
+    --metadata-file /Data/Theranostic_surrogate_marker_.xlsx \
+    --output-root /Data/outputs \
     --vit-mode 2d_channels \
     --input-depth 32 \
     --target-mode twoclass \
@@ -222,9 +222,9 @@ Use this when the input is a 3D crop and you want to train a true 3D ViT.
 
 ```bash
 python train_vit_pdl1.py \
-    --data-dir /Data/GEMINI_DATA_EMAN_Collected/DeepLearningBased/AllCohort/3D_32_224_224/tissue_pad_32 \
-    --metadata-file /Data/GEMINI_DATA_EMAN_Collected/Theranostic_surrogate_marker_.xlsx \
-    --output-root /Data/GEMINI_DATA_EMAN_Collected/outputs \
+    --data-dir /Data/DeepLearningBased/AllCohort/3D_32_224_224/tissue_pad_32 \
+    --metadata-file /Data/Theranostic_surrogate_marker_.xlsx \
+    --output-root /Data/outputs \
     --vit-mode 3d \
     --input-depth 32 \
     --spatial-size 192 \
