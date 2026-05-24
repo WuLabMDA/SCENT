@@ -1,0 +1,28 @@
+imageType:
+  Original: {}
+  Wavelet: {}
+  LoG:
+    sigma: [1.0, 2.0, 3.0, 4.0, 5.0]
+  Square: {}
+  SquareRoot: {}
+  Logarithm: {}
+  Exponential: {}
+  Gradient: {}
+  LBP3D: {}
+
+featureClass:
+  firstorder:
+  glcm:
+  gldm:
+  glrlm:
+  glszm:
+  ngtdm:
+  shape:
+
+setting:
+  binWidth: 25
+  label: 1
+  weightingNorm:
+  interpolator: sitkBSpline
+  resampledPixelSpacing: [1, 1, 1]
+  symmetricalGLCM: true
