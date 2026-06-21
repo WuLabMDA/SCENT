@@ -36,16 +36,19 @@ cd SCENT
 If you use this framework, please cite our work:
 
 ```bibtex
-@article{SCENTPDL1,
-  title={Deep Learning of CT Imaging Predicts PD-L1 Expression and Immunotherapy Benefit in Metastatic NSCLC: A Multi-Center Study },
-  author={},
-  journal={},
-  year={Year},
-  volume={Volume},
-  pages={Pages},
-  doi={DOI}
+@article{Muneer2026SCENT,
+  title = {Deep learning of CT imaging predicts {PD-L1} expression and immunotherapy response in metastatic {NSCLC}: A multi-center study},
+  author = {Muneer, Amgad and Showkatian, Eman and Saad, Maliazurina B. and Hong, Lingzhi and Li, Shenduo and Salehjahromi, Morteza and Aminu, Muhammad and Sujit, Sheeba J. and Xu, Hui and Waqas, Muhammad and Zafar, Anas and Shroff, Girish S. and Wu, Carol C. and Carter, Brett W. and Chang, Joe Y. and Liao, Zhongxing and Altan, Mehmet and Vokes, Natalie I. and Cascone, Tina and Le, Xiuning and Haymaker, Cara L. and Wistuba, Ignacio I. and Chung, Caroline and Jaffray, David and Gibbons, Don L. and Vaporciyan, Ara and Lee, J. Jack and Lou, Yanyan and Heymach, John V. and Zhang, Jianjun and Wu, Jia},
+  journal = {Cancer Letters},
+  volume = {656},
+  pages = {218687},
+  year = {2026},
+  issn = {0304-3835},
+  doi = {10.1016/j.canlet.2026.218687},
+  url = {https://www.sciencedirect.com/science/article/pii/S0304383526004519}
 }
 ```
+
 
 For questions, contributions, or issues, please contact us or create a new issue in this repository.
 
